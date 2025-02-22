@@ -2,6 +2,8 @@ name: simple_swipe_button
 description: A simple and customizable swipe button for Flutter.
 version: 1.0.0
 homepage: https://github.com/ziagit/simple_swipe_button
+repository: https://github.com/ziagit/simple_swipe_button
+
 
 environment:
   sdk: ^3.6.0
