@@ -17,6 +17,10 @@ class MyApp extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: SimpleSwipeButton(
+              intialTextColor: Colors.black87,
+              swipedTextColor: Colors.black87,
+              backgroundColor: Colors.grey,
+              swipedBackgroundColor: Colors.green,
               initialText: "Swipe to start",
               completedText: "Completed",
               onSwipeComplete: () {
