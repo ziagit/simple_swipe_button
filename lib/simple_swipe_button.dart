@@ -6,6 +6,9 @@ class SimpleSwipeButton extends StatefulWidget {
   final Color backgroundColor;
   final Color swipedBackgroundColor;
   final Color buttonColor;
+  final Color intialTextColor;
+  final Color swipedTextColor;
+
   final VoidCallback onSwipeComplete;
 
   const SimpleSwipeButton({
@@ -16,6 +19,8 @@ class SimpleSwipeButton extends StatefulWidget {
     this.backgroundColor = const Color(0xFFD3D3D3),
     this.swipedBackgroundColor = Colors.green,
     this.buttonColor = Colors.white,
+    this.intialTextColor = Colors.black87,
+    this.swipedTextColor = Colors.black87,
   });
 
   @override
@@ -100,10 +105,11 @@ class _SimpleSwipeButtonState extends State<SimpleSwipeButton> {
                     duration: Duration(milliseconds: 300),
                     child: Text(
                       _isCompleted ? widget.completedText : widget.initialText,
-                      key: ValueKey<bool>(
-                          _isCompleted), // Ensures proper text change animation
+                      key: ValueKey<bool>(_isCompleted),
                       style: TextStyle(
-                        color: Colors.black87,
+                        color: _isCompleted
+                            ? widget.swipedBackgroundColor
+                            : widget.intialTextColor,
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
                       ),
