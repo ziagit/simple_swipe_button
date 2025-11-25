@@ -131,7 +131,8 @@ class _SimpleSwipeButtonState extends State<SimpleSwipeButton> {
                         ),
                       ],
                     ),
-                    child: Icon(Icons.arrow_forward, color: Colors.black),
+                    child:
+                        Icon(Icons.arrow_forward_rounded, color: Colors.black),
                   ),
                 ),
               ),
