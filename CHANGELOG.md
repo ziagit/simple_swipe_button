@@ -1,6 +1,4 @@
 # Changelog
 
-## 1.0.1 - 2025-02-22
-- Fixed color issues
-- Improved swipe animation
-- Dynamic width support
+## 1.0.3 - 2025-11-25
+- Icon updated
